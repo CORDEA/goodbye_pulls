@@ -36,7 +36,8 @@ defmodule GoodbyePulls.Mixfile do
       {:phoenix_pubsub, "~> 1.0"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:tentacat, "~> 0.5"}
+      {:tentacat, "~> 0.5"},
+      {:httpoison, "~> 0.13"}
     ]
   end
 end
