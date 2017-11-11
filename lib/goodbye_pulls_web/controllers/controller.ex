@@ -15,6 +15,8 @@ defmodule GoodbyePullsWeb.Controller do
       pr = parse_request params
       url = gist_raw_url Application.get_env(:goodbye_pulls, :gist_id)
       resp = HTTPoison.get! url
+      IO.inspect comment(pr, resp.body)
+      IO.inspect close_pull_request(pr)
       render(conn, "pulls.json", [])
     else
       conn
