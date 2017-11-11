@@ -4,7 +4,9 @@ defmodule GoodbyePullsWeb.Controller do
   alias Tentacat.{Client, Pulls}
   alias Tentacat.Pulls.Comments
 
-  @client Client.new(%{access_token: ""})
+  @client Client.new %{
+    access_token: Application.get_env(:goodbye_pulls, :github_access_token)
+  }
 
   def pulls(conn, params) do
     if is_opened(params) do
