@@ -7,5 +7,6 @@ defmodule GoodbyePullsWeb.Router do
 
   scope "/api", GoodbyePullsWeb do
     pipe_through :api
+    post "/pulls", Controller, :pulls
   end
 end
