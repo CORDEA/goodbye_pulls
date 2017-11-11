@@ -19,7 +19,6 @@ defmodule GoodbyePulls.Mixfile do
   def application do
     [
       mod: {GoodbyePulls.Application, []},
-      applications: [:tentacat],
       extra_applications: [:logger, :runtime_tools]
     ]
   end
