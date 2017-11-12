@@ -1,18 +1,14 @@
 # GoodbyePulls
 
-To start your Phoenix server:
+Automatically close the coming pull requests.
 
-  * Install dependencies with `mix deps.get`
-  * Start Phoenix endpoint with `mix phx.server`
+## Usage
+
+* Save the comment on gist (filename is `comment.txt`). This is commented before pull request is closed.
+* Add gist id and github access token to `dev.secret.exs`.
+* Install dependencies with `mix deps.get`
+* Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
